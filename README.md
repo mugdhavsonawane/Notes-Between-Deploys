@@ -1,2 +1,2 @@
 # notes-between-deploys
-A website to record my notes between my project deployments.
+A website to record notes about my deployments.
