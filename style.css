@@ -630,3 +630,17 @@ a:focus-visible, button:focus-visible{ outline: none; box-shadow: var(--focus); 
   height: 38px;
   object-fit: contain;
 }
+
+/* Center project title and published date */
+.post-header {
+  text-align: center;
+}
+
+.post-title {
+  margin-bottom: 6px;
+}
+
+.post-meta {
+  margin-top: 0;
+  text-align: center;
+}
