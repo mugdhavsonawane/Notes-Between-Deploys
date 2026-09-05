@@ -1,0 +1,351 @@
+<!-- project-shadow-of-reddit.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Shadow of Reddit is a lightweight, Reddit-inspired community platform for sharing opinions, publishing posts, and voting on community content."
+  />
+
+  <title>Shadow of Reddit • Notes Between Deploys</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a
+      class="brand"
+      href="index.html"
+      aria-label="Notes Between Deploys home"
+    >
+      Notes Between Deploys
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-controls="primary-nav"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="primary-nav" class="top-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">All Projects</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page page--post">
+    <article class="panel panel--wide post">
+
+      <header class="post-header">
+        <h1 class="post-title">
+          Shadow of Reddit: A Dynamic Peer Review Platform
+        </h1>
+
+        <p class="post-meta">
+          Published
+          <time datetime="2026-09-05">2026-09-05</time>
+        </p>
+
+        <div class="post-cta">
+          <a class="btn btn--primary" href="projects.html">
+            Back to All Projects
+          </a>
+
+          <a
+            class="btn btn--ghost"
+            href="https://shadow-of-reddit.alwaysdata.net"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            View Live Site
+          </a>
+
+          <a
+            class="btn btn--ghost"
+            href="https://github.com/mugdhavsonawane/Shadow-of-Reddit-Dynamic-Peer-Review-Website"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            View on GitHub
+          </a>
+        </div>
+
+        <div
+          class="post-hero-banner post-hero-banner--shadow-of-reddit card-media"
+          role="img"
+          aria-label="Shadow of Reddit project banner"
+        ></div>
+      </header>
+
+      <div class="post-content">
+
+        <p class="lead">
+          Shadow of Reddit is a lightweight, smaller-scale version of Reddit
+          where users can publish opinions and posts, vote on community
+          content, and manage their own submissions. I built the project to
+          explore full-stack web development, user authentication, database
+          security, and production deployment.
+        </p>
+
+        <h2>Tech Stack</h2>
+
+        <div class="tech-stack">
+
+          <div class="tech-stack-group">
+            <h3>Backend</h3>
+
+            <div class="tech-stack-logos">
+              <img
+                src="https://cdn.simpleicons.org/php"
+                alt="PHP"
+                title="PHP"
+              >
+            </div>
+          </div>
+
+          <div class="tech-stack-group">
+            <h3>Frontend</h3>
+
+            <div class="tech-stack-logos">
+              <img
+                src="https://cdn.simpleicons.org/html5"
+                alt="HTML5"
+                title="HTML5"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/css"
+                alt="CSS3"
+                title="CSS3"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/javascript"
+                alt="JavaScript"
+                title="JavaScript and AJAX"
+              >
+            </div>
+          </div>
+
+          <div class="tech-stack-group">
+            <h3>Database</h3>
+
+            <div class="tech-stack-logos">
+              <img
+                src="https://cdn.simpleicons.org/postgresql"
+                alt="PostgreSQL"
+                title="PostgreSQL"
+              >
+            </div>
+          </div>
+
+          <div class="tech-stack-group">
+            <h3>Version Control &amp; Hosting</h3>
+
+            <div class="tech-stack-logos">
+              <img
+                src="https://cdn.simpleicons.org/git"
+                alt="Git"
+                title="Git"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/github"
+                alt="GitHub"
+                title="GitHub"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/apache"
+                alt="Apache"
+                title="Apache on Alwaysdata"
+              >
+            </div>
+          </div>
+
+        </div>
+
+        <h2>What I Built</h2>
+
+        <p>
+          I built a full-stack community platform inspired by Reddit’s core
+          posting and voting model. Visitors can browse community posts and
+          view their ratings, while registered users can publish their own
+          opinions, increase or decrease post ratings, and delete content they
+          created.
+        </p>
+
+        <p>
+          The application uses PHP for server-side processing, PostgreSQL for
+          persistent storage, and JavaScript with AJAX to load posts
+          asynchronously. The interface is built with HTML and CSS and adapts
+          to desktop and mobile screen sizes.
+        </p>
+
+        <h2>Highlights</h2>
+
+        <ul>
+          <li>
+            <b>User authentication:</b> Users can register, log in, and log out
+            through session-based authentication. Passwords are securely
+            hashed before being stored in PostgreSQL.
+          </li>
+
+          <br>
+
+          <li>
+            <b>Community voting:</b> Authenticated users can increase or
+            decrease the rating of a post, and posts are displayed according
+            to their community rating.
+          </li>
+
+          <br>
+
+          <li>
+            <b>Content ownership:</b> A user can delete only their own posts.
+            Ownership is verified on the server using the authenticated
+            username stored in the session.
+          </li>
+
+          <br>
+
+          <li>
+            <b>Secure database access:</b> The application uses PDO prepared
+            statements for database operations and keeps database credentials
+            outside the public Git repository.
+          </li>
+        </ul>
+
+        <h2>Architecture Approach</h2>
+
+        <p>
+          The project follows a lightweight Model-View-Controller structure.
+          The PHP pages provide the user interface, the controller processes
+          user actions, and the database adaptor handles communication with
+          PostgreSQL.
+        </p>
+
+        <ul>
+          <li>
+            <b>View layer:</b> The main, registration, login, and post creation
+            pages render the interface and collect user input.
+          </li>
+
+          <br>
+
+          <li>
+            <b>Controller layer:</b> The controller handles registration,
+            authentication, voting, post creation, deletion, and redirects.
+          </li>
+
+          <br>
+
+          <li>
+            <b>Data layer:</b> The database adaptor uses PHP Data Objects to
+            execute prepared PostgreSQL statements.
+          </li>
+
+          <br>
+
+          <li>
+            <b>Authentication layer:</b> PHP sessions preserve the user’s
+            authenticated state between requests.
+          </li>
+        </ul>
+
+        <pre class="code-block"><span class="lang">PHP</span><code>// A post can be deleted only by its authenticated author.
+$stmt = $this-&gt;DB-&gt;prepare(
+    "DELETE FROM quotations
+     WHERE id = :id
+     AND author = :author"
+);
+
+$stmt-&gt;execute([
+    ':id' =&gt; (int) $ID,
+    ':author' =&gt; $author
+]);
+</code></pre>
+
+        <h3>Security Decisions</h3>
+
+        <p>
+          Authentication and authorization are enforced on the server rather
+          than relying on values submitted by the browser. When a user creates
+          or deletes a post, the application obtains the author’s identity
+          from the active session.
+        </p>
+
+        <p>
+          User passwords are processed with PHP’s password hashing functions,
+          session identifiers are regenerated after authentication, database
+          queries use parameterized statements, and displayed user content is
+          escaped before being added to the page.
+        </p>
+
+        <h2>Deployment Strategy</h2>
+
+        <p>
+          The source code is managed in GitHub and deployed to Alwaysdata as a
+          PHP application. PostgreSQL runs as a managed database on the same
+          hosting platform.
+        </p>
+
+        <p>
+          The application repository is cloned into the website directory on
+          the server. New versions are deployed by pushing reviewed changes to
+          GitHub and pulling those changes into the Alwaysdata environment
+          through SSH.
+        </p>
+
+        <p>
+          Database connection settings are stored in a configuration file
+          outside the application’s public directory, while the database
+          password is provided through an environment variable. This keeps
+          deployment-specific credentials out of source control.
+        </p>
+
+        <h2>Results</h2>
+
+        <p>
+          The result is a publicly accessible, database-backed community
+          application that demonstrates full-stack development from interface
+          design through production deployment. Version 1.0.0 delivers the
+          project’s core experience: authentication, opinion-based posting,
+          community voting, content ownership, and persistent storage.
+        </p>
+
+        <hr class="post-divider" />
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      © <span id="year"></span> Mugdha Sonawane. Built with HTML, CSS, and JS.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
