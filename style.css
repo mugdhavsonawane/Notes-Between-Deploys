@@ -477,17 +477,40 @@ a:focus-visible, button:focus-visible{ outline: none; box-shadow: var(--focus); 
 .card-media--p6{ background: linear-gradient(135deg, rgba(34,211,238,0.26), rgba(59,130,246,0.22)); }
 
 .post-hero{
-  background-image: url("assets/notes-between-deploys-image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.post-hero-banner{
-  background-image: url("assets/notes-between-deploys-banner.png");
+.post-hero--notes-between-deploys{
+  background-image: url("assets/notes-between-deploys-image.png");
+}
+
+.post-hero--shadow-of-reddit{
+  background-image: url("assets/shadow-of-reddit-image.png");
+}
+
+.post-hero-banner {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.post-hero-banner--notes-between-deploys {
+  background-image: url("assets/notes-between-deploys-banner.png");
+}
+
+.post-hero-banner--shadow-of-reddit {
+  background-image: url("assets/shadow-of-reddit-banner.png");
+}
+
+.post-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 22px;
 }
 
 .card-body{
