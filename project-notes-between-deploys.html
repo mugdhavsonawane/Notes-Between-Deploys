@@ -9,20 +9,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Notes Between Deploys home">Notes Between Deploys</a>
+    <a class="brand" href="index.html" aria-label="Notes Between Deploys home">
+      Notes Between Deploys
+    </a>
 
-    <button class="nav-toggle" type="button"
+    <button
+      class="nav-toggle"
+      type="button"
       aria-label="Open menu"
       aria-controls="primary-nav"
-      aria-expanded="false">
-      <span></span><span></span><span></span>
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
     <nav id="primary-nav" class="top-nav" aria-label="Primary">
@@ -33,32 +40,143 @@
 
   <main id="main" class="page page--post">
     <article class="panel panel--wide post">
+
       <header class="post-header">
-        <h1 class="post-title">Notes Between Deploys: A Prompt Engineering Project</h1>
-        <p class="post-meta">Published <time datetime="2026-02-05">2026-02-05</time></p>
-        <div class="post-hero-banner card-media" role="img" aria-label="Project hero image"></div>
+        <h1 class="post-title">
+          Notes Between Deploys: A Prompt Engineering Project
+        </h1>
+
+        <p class="post-meta">
+          Published
+          <time datetime="2026-02-05">2026-02-05</time>
+        </p>
+
+        <div
+          class="post-hero-banner card-media"
+          role="img"
+          aria-label="Project hero image"
+        ></div>
       </header>
 
       <div class="post-content">
+
         <p class="lead">
           I wanted a website, but instead of writing every line of HTML and CSS from scratch, I decided to see if AI could do the heavy lifting. Welcome to my Prompt Engineering Project, where I formulated requirements, let ChatGPT and Gemini generate the files, and figured out how to deploy the results to the world.
         </p>
 
+        <h2>Tech Stack</h2>
+
+        <div class="tech-stack">
+
+          <div class="tech-stack-group">
+            <h3>AI Assistants</h3>
+
+            <div class="tech-stack-logos">
+              <img
+                src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/15.16.0/openai.svg"
+                alt="ChatGPT"
+                title="ChatGPT"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/googlegemini"
+                alt="Gemini"
+                title="Gemini"
+              >
+            </div>
+          </div>
+
+          <div class="tech-stack-group">
+            <h3>Frontend</h3>
+
+            <div class="tech-stack-logos">
+              <img
+                src="https://cdn.simpleicons.org/html5"
+                alt="HTML5"
+                title="HTML5"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/css"
+                alt="CSS3"
+                title="CSS3"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/javascript"
+                alt="JavaScript"
+                title="JavaScript"
+              >
+            </div>
+          </div>
+
+          <div class="tech-stack-group">
+            <h3>Version Control</h3>
+
+            <div class="tech-stack-logos">
+              <img
+                src="https://cdn.simpleicons.org/git"
+                alt="Git"
+                title="Git"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/github"
+                alt="GitHub"
+                title="GitHub"
+              >
+            </div>
+          </div>
+
+          <div class="tech-stack-group">
+            <h3>Hosting &amp; CI/CD</h3>
+
+            <div class="tech-stack-logos">
+              <img
+                src="https://cdn.simpleicons.org/github"
+                alt="GitHub Pages"
+                title="GitHub Pages"
+              >
+
+              <img
+                src="https://cdn.simpleicons.org/githubactions"
+                alt="GitHub Actions"
+                title="GitHub Actions"
+              >
+            </div>
+          </div>
+
+        </div>
+
         <h2>What I built</h2>
+
         <p>
-          I built a minimalist website by acting as the architect and letting AI be the developer. I formulated specific requirements and prompted ChatGPT and Gemini to generate all the necessary code and structural files for a web project. <br><br>Once the AI handed over the raw HTML and CSS, my job shifted to implementation. I had to organize the provided source files, ensure proper directory structures, and configure everything so the site could actually live on the internet instead of just sitting in a chat window.
+          I built a minimalist website by acting as the architect and letting AI be the developer. I formulated specific requirements and prompted ChatGPT and Gemini to generate all the necessary code and structural files for a web project. <br><br>Getting the initial raw HTML and CSS was just the first step. From there, I went through numerous iterations—reviewing the generated code line-by-line, tweaking my prompts, and working back-and-forth with the AI to perfect the layout, styling, and structure.
+          Once the code finally met my standards, my job shifted to implementation: organizing the source files, fixing directory paths, and configuring the environment so the site could actually live on the internet instead of just sitting in a chat window.
         </p>
 
         <h2>Highlights</h2>
+
         <ul>
-          <li>Key learning #1: <b>AI needs specific requirements.</b> You can't just say "build me a website" and expect a finished product. I had to formulate specific prompts and iteratively guide the AI to generate the exact HTML, CSS, and layout structures I needed.</li>
+          <li>
+            Key learning #1: <b>AI needs specific requirements.</b> You can't just say "build me a website" and expect a finished product. I had to formulate specific prompts and iteratively guide the AI to generate the exact HTML, CSS, and layout structures I needed.
+          </li>
+
           <br>
-          <li>Key learning #2: <b>Implementation is still a human job.</b> The AI gave me the files, but getting a bunch of raw code means nothing if the files aren't linked correctly. I had to organize the output and fix directory paths to ensure the site worked as a cohesive unit.</li>
+
+          <li>
+            Key learning #2: <b>Iteration and review are critical.</b> The AI rarely gets it perfect on the first try. I had to read through the generated code, spot layout or logic issues, and iteratively refine my prompts to get the exact result I wanted before manually linking everything together into a cohesive unit.
+          </li>
+
           <br>
-          <li>Key learning #3: <b>Deployment takes research.</b> I had the static files, but I had to research, configure, and successfully deploy them to GitHub Pages myself to make the site publicly accessible.</li>
+
+          <li>
+            Key learning #3: <b>Deployment takes research.</b> I had the static files, but I had to research, configure, and successfully deploy them to GitHub Pages myself to make the site publicly accessible.
+          </li>
         </ul>
 
         <h2>Architecture Approach</h2>
+
         <p>
           The architecture relies entirely on AI-generated static files. It’s a purely static site: no heavy backend, no database to maintain, just plain HTML and CSS files served straight to the browser via GitHub Pages.
           <br>
@@ -66,47 +184,86 @@
           The main tradeoff is that maintaining or scaling the site means going back to the AI, or digging through the code and figuring it out for myself. If I want to add a complex feature later, I have to figure out how to prompt the AI to update the existing codebase without breaking the layout. But for getting a fast, reliable site off the ground, this workflow was incredibly efficient.
         </p>
 
-        <pre class="code-block"><span class="lang">HTML</span><code>&lt;!-- Generated via ChatGPT/Gemini --&gt;
-&lt;div class=&quot;ai-generated-layout&quot;&gt;
-  &lt;p&gt;Prompt: &quot;Generate a responsive HTML structure...&quot;&lt;/p&gt;
-&lt;/div&gt;
+        <pre class="code-block"><span class="lang">YAML</span><code># .github/workflows/deploy.yml
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ["prod"]
+
+jobs:
+  deploy:
+    environment:
+      name: prod
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
 </code></pre>
 
         <h3>The Deployment Strategy</h3>
+
         <p>
-          You might think a website built by AI wouldn't need a deployment strategy. You would be wrong. Taking raw text from a chatbot and turning it into a live website requires a solid hosting approach. I chose GitHub Pages for this.
+          You might think a website built by AI wouldn't need a deployment strategy. You would be wrong. Taking raw text from a chatbot and turning it into a live website requires a solid hosting and version control approach. To keep the project disciplined, I applied the same enterprise branching strategies I use at my day job, eventually deploying via GitHub Pages.
           <br>
+
           <ul>
-            <li><b>The Local Environment:</b> This is where I gathered the files ChatGPT and Gemini spit out, tested them in my browser, and organized the directories.</li>
+            <li>
+              <b>The <code>dev</code> branch:</b> This is my drafting room. It's where I gathered the iterative files ChatGPT and Gemini generated, tested them in my local browser, and worked through the back-and-forth prompt refinements until the code was perfect.
+            </li>
+
             <br>
-            <li><b>The Git Repository:</b> I pushed the finalized, AI-generated source files into a GitHub repository. This became the absolute source of truth for the codebase.</li>
+
+            <li>
+              <b>The <code>main</code> branch:</b> The pristine vault. Once the code in <code>dev</code> met all my requirements and was properly organized, it was merged here as the absolute source of truth for the codebase.
+            </li>
+
             <br>
-            <li><b>GitHub Pages Configuration:</b> I researched how to enable GitHub Pages on the repository, pointing it to serve the static HTML files directly to the public internet.</li>
+
+            <li>
+              <b>The <code>prod</code> branch:</b> The live environment. Code merged from <code>main</code> to <code>prod</code> serves as the final step, triggering the GitHub Actions workflow above to serve these static HTML files directly to the public internet.
+            </li>
           </ul>
 
           You might notice a glaring omission: <i>Where is the backend configuration?</i>
           <br>
           <br>
-          There isn't one. Since the AI generated purely static files, I didn't need to spin up a complex server, database, or staging environment. If the HTML files looked good when I opened them on my laptop, they were ready to be pushed live to GitHub Pages.
+          There isn't one. Since the AI generated purely static files, I didn't need to spin up a complex server, database, or staging environment. If the HTML files looked good when I tested them locally on my <code>dev</code> branch, they were ready to be pushed up the chain to live on GitHub Pages.
         </p>
 
         <h2>Results</h2>
+
         <p>
-          The result is a fully functional, publicly accessible website. Performance is excellent because serving plain HTML is as fast as the internet gets. But the real impact was the learning experience: I successfully bridged the gap between raw AI generation and real-world deployment, learning how to leverage tools like ChatGPT and Gemini for actual web development.
+          The result is a fully functional, publicly accessible website. Performance is excellent because serving plain HTML is as fast as the internet gets. But the real impact was the learning experience: I successfully bridged the gap between raw AI generation and real-world deployment, learning how to leverage tools like ChatGPT and Gemini for actual web development while applying professional version control standards.
         </p>
 
         <hr class="post-divider" />
 
         <div class="post-cta">
-          <a class="btn btn--primary" href="projects.html">Back to All Projects</a>
-          <a class="btn btn--ghost" href="https://github.com/mugdhavson/Notes-Between-Deploys" target="_blank" rel="noreferrer noopener">View on GitHub</a>
+          <a class="btn btn--primary" href="projects.html">
+            Back to All Projects
+          </a>
+
+          <a
+            class="btn btn--ghost"
+            href="https://github.com/mugdhavsonawane/Notes-Between-Deploys"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            View on GitHub
+          </a>
         </div>
+
       </div>
     </article>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Mugdha Sonawane.</p>
+    <p>
+      © <span id="year"></span> Mugdha Sonawane. Built with HTML, CSS, and JS.
+    </p>
   </footer>
 
   <script src="script.js"></script>
